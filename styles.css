@@ -1,6 +1,15 @@
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    width: 750px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
 }
 .container{
     display: flex;
