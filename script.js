@@ -48,7 +48,7 @@ function main(){
     const button = document.querySelector(".brushSize");
 
     button.addEventListener("click", () =>{
-        let newCells = prompt("Enter number of cells:");
+        let newCells = prompt("Enter Pen Size (Larger Number = Smaller Pen Size) (Maximum is 100) (All marks will be cleared):");
 
         if (newCells !== null){
             if (newCells <= 0){
