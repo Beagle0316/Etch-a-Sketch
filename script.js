@@ -8,6 +8,13 @@ function deleteCanvas(numberOfCells){
 
 }
 
+function clearCanvas(){
+    const cells = document.querySelectorAll(".cell");
+
+    cells.forEach((cell) => {
+        cell.style.backgroundColor = "white";
+    });
+}
 function squareDivs(numberOfCells){
     const container = document.querySelector(".container");
     
@@ -46,6 +53,7 @@ function hover(){
 
 function main(){
     const button = document.querySelector(".brushSize");
+    const buttonTwo = document.querySelector(".clearCanvas");
 
     button.addEventListener("click", () =>{
         let newCells = prompt("Enter Pen Size (Larger Number = Smaller Pen Size) (Maximum is 100) (All marks will be cleared):");
@@ -63,6 +71,10 @@ function main(){
                 squareDivs (numberOfCells);
             }
         }
+    });
+
+    buttonTwo.addEventListener("click", () =>{
+        clearCanvas();
     });
 
 }
