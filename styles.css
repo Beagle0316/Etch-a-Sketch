@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: cornflowerblue;
 }
 .menu{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     width: 750px;
-    border-width: 1px;
+    border-width: 5px;
     border-style: solid;
-    border-color: black;
+    border-color: bisque;
+    margin-bottom: 25px ;
+    padding: 8px;
+    border-radius: 10px;
 }
 .container{
     display: flex;
@@ -20,9 +27,9 @@ body{
     align-items: flex-start;
     align-content: flex-start;
     box-sizing: border-box;
-    border-width: 2px;
+    border-width: 10px;
     border-style: solid;
-    border-color: black;
+    border-color: bisque;
     overflow: hidden;
     width:  850px;
     height: 850px;
@@ -39,9 +46,14 @@ body{
     box-sizing: border-box;
     background-color: white;
     gap: 0px;
-    /*
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    */
+}
+button{
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    background-color: bisque;
+}
+h1{
+    font-size: 70px;
+    font-family:  "Great Vibes", cursive;
 }
